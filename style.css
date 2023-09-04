@@ -1,0 +1,270 @@
+body {
+    text-align: center;
+    background-image: url('https://i.pinimg.com/originals/78/31/6f/78316f558fffb95e96a120dcf3c430d3.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-head h1 {
+    font-size: 8rem;
+    color: #F2ECBE;
+    text-shadow: 4px 4px 6px black;
+    font-family: 'Delicious Handrawn', cursive;
+    font-display: center;
+    margin: 0;
+    
+  }
+  
+  .main-head p {
+    font-size: 1.5rem;
+    font-family: 'Crafty Girls', cursive;
+    font-display: center;
+    margin: 0;
+    color: #6c2323;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    font-weight: 800;
+  }
+  
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #FFBA86;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 767px) {
+  .container {
+      padding: 10px;
+  }
+
+  .timer {
+      font-size: 24px;
+  }
+
+  /* Additional mobile-specific styles can go here */
+}
+
+/* Media Query for Larger Screen Viewport (Desktop) */
+@media screen and (min-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  .timer {
+      font-size: 36px;
+  }
+
+  /* Additional desktop-specific styles can go here */
+}
+
+h1 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 40px;
+    margin-top: 0;
+    color: #dd2222;
+}
+
+p {
+  font-family: 'Crafty Girls', cursive;
+  font-size: 20px;
+  margin-top: 0;
+  color: #dd2222; 
+  font-style: normal;
+
+  }
+.timer {
+    font-family: 'Crafty Girls', cursive;
+    color: brown;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.separator {
+    font-size: 36px;
+    margin: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Crafty Girls', cursive;
+    font-weight: 200;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    display: inline;
+    background-color: #79155B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C23373;
+}
+
+.modes {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.modes button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    background-color: #79155B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modes button.active {
+    background-color: #79155B;
+}
+
+.modes button:hover{
+  background-color: #C23373;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dd2222;
+    border-radius: 5px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    font-family: 'Delicious Handrawn', cursive;
+    overflow: hidden;
+    background-color: #C08261;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #9A3B3B;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: whitesmoke;
+    color: #79155B;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    display: flex;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  .header-right a {
+    font-size: 25px;
+  }
+
+
+  .icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
+
+  html {
+    height: -webkit-fill-availanble;
+  
+  }
